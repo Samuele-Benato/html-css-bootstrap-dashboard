@@ -110,32 +110,38 @@
             <div class="row">
                <!-- NEW STUDENT -->
                <div class="col-12 col-md-4 col-lg-3 order-md-3">
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                <div class="d-flex ">
+                  <p>Nuovo Studente</p>
+                  <button 
+                  class="btn btn-primary"   
+                  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"aria-controls="staticBackdrop">
                   +
                 </button>
+                </div>
+                
               </div>
               <!-- BOOLEAN APPS -->
               <div class="col-12 col-md-4 col-lg-5 order-md-1">
                 <div>
                   <h2 class="d-inline-block">Boolean</h2>
-                  <span class="badge bg-secondary">New</span>
+                  <span class="badge rounded-pill text-bg-primary">Piano blaze</span>
                 </div>
                 
-                <div class="badge bg-secondary
-                d-inline-block">New</div>
+                <div class="badge rounded-pill text-bg-primary
+                d-inline-block">3 app</div>
 
                 <i class="fa-solid fa-angles-right"></i>
 
-                <div class="badge bg-secondary
-                d-inline-block d-lg-none">New</div>
+                <div class="badge rounded-pill text-bg-primary
+                d-inline-block d-lg-none">+</div>
 
                 <div class="d-lg-inline-block d-none">
-                  <div class="badge bg-secondary
-                  d-inline-block">New</div>
-                  <div class="badge bg-secondary
-                  d-inline-block">New</div>
-                  <div class="badge bg-secondary
-                  d-inline-block">New</div>
+                  <div class="badge rounded-pill text-bg-primary
+                  d-inline-block">Boolean mobile app</div>
+                  <div class="badge rounded-pill text-bg-primary
+                  d-inline-block">Boolean web app</div>
+                  <div class="badge rounded-pill text-bg-primary
+                  d-inline-block">Boolean blog app</div>
                 </div>
                 
               </div>
@@ -153,14 +159,174 @@
       </div>
     </main>
     <!-- OFF CANVAS -->
-    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div 
+      class=" offcanvas offcanvas-end w_canvas " data-bs-backdrop="static" 
+      tabindex="-1" 
+      id="staticBackdrop" aria-labelledby="staticBackdropLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+        <!-- TITLE -->
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
+        <!-- BUTTON X -->
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <div>
-          I will not close if you click outside of me.
+          <!-- FORM -->
+          <form
+          class="row g-3"
+          action="http://learning.tizianonicolai.com/request-catcher/"
+          method="post">
+          <!-- NOME -->
+          <div class="d-inline-block w-50">
+            <label for="Nome">Nome</label>
+            <div class="input-group               has-validation">
+            <input 
+            class="form-control"
+            id="Nome" 
+            name="Nome" 
+            type="text"
+            required>
+
+              <div class="invalid-feedback">
+              Inserisci un Nome. 
+              </div>
+            </div>
+            
+          </div>
+          <!-- COGNOME -->
+          <div class="d-inline-block w-50">
+            <label for="Cognome">Cognome</label>
+            <div class="input-group               has-validation">
+              <input 
+              class="form-control"
+              id="Cognome" 
+              name="Cognome" 
+              type="text"
+              required>
+              
+              <div class="invalid-feedback">
+                Inserisci un Cognome. 
+              </div>
+            </div>
+           
+          </div>
+          <!-- EMAIL -->
+          <div class="d-inline-block w-50">
+            <label for="Email">Email</label>
+            <div class="input-group               has-validation">
+              <div class="input-group">
+                <span class="input-group-text" id="Email">@</span>
+                <input 
+                type="text" 
+                class="form-control"   
+                aria-describedby="Email"
+                required>
+              </div>
+              <div class="invalid-feedback">
+                Inserisci un email valida. 
+              </div>
+            </div>
+            
+          </div>
+          <!-- PASSWORD -->
+          <div class="d-inline-block w-50">
+            <label for="Password">Password</label>
+            <input 
+            class="form-control"
+            id="Password" 
+            name="Password" 
+            type="password">
+            <div class="invalid-feedback"
+            required>
+              Inserisci una Password sicura. 
+            </div>
+          </div>
+          <!-- INDIRIZZO -->
+          <div class="d-inline-block">
+            <label for="Indirizzo">Indirizzo</label>
+            <input 
+            class="form-control"
+            id="Indirizzo" 
+            name="Indirizzo" 
+            type="text"
+            required>
+            <div class="invalid-feedback">
+              Inserisci un indirizzo valido. 
+            </div>
+          </div>
+          <!-- CITTA' -->
+          <div class="d-inline-block w-50">
+            <label for="Città">Città</label>
+            <input 
+            class="form-control"
+            id="Città" 
+            name="Città" 
+            type="text"
+            required>
+            <div class="invalid-feedback">
+              Inserisci una città valida. 
+            </div>
+          </div>
+          <!-- STATO -->
+          <div class="d-inline-block w-25">
+            <label for="Città">Stato</label>
+            <select class="form-select form-select" >
+              <option selected="">Scegli...</option>
+              <option value="Italia">Italia</option>
+              <option value="Giappone">Giappone</option>
+              <option value="Spagna">Spagna</option>
+            </select>
+          </div>
+          <!-- CAP -->
+          <div class="d-inline-block w-25">
+            <label for="CAP">CAP</label>
+            <input 
+            class="form-control"
+            id="CAP" 
+            name="CAP" 
+            type="text"
+            required>
+          </div>
+          <div class="invalid-feedback">
+            Inserisci CAP. 
+          </div>
+          <!-- FOTO -->
+          <div class="d-inline-block w-100">
+            <label 
+            for="formFile" class="form-label">Foto</label>
+            <input 
+            class="form-control" 
+            type="file" 
+            id="formFile">
+          </div>
+          <!-- PRIVACY -->
+          <div class="d-inline-block w-100">
+            <div class="form-check">
+              <input 
+              class="form-check-input" 
+              type="checkbox" 
+              value="" 
+              id="Acconsente"
+              required>
+              <label class="form-check-label" for="Acconsente">
+                Acconsento all'utilizzo dei dati 
+              </label>
+            </div>
+            <div class="invalid-feedback">
+            </div>
+          </div>
+          <!-- SALVA -->
+          <div class="d-inline-block">
+            <input 
+            class="btn btn-primary" 
+            type="submit" 
+            value="Salva">
+          </div>
+          <!-- SVUOTA -->
+          <button 
+          type="button" 
+          class="btn btn-warning">Svuota</button>
+        </form>
         </div>
       </div>
     </div>

@@ -55,6 +55,11 @@ ul {
   padding: 0;
 }
 
+/* OFFCANVAS */
+.w_canvas {
+  min-width: 100% !important;
+}
+
 /* MEDIA QUERYS */
 
 @media screen and (min-width: 992px) {
@@ -67,5 +72,9 @@ ul {
   #main-content {
     height: 100%;
     width: calc(100% - 200px);
+  }
+  /* OFFCANVAS */
+  .w_canvas {
+    width: 60% !important;
   }
 }
