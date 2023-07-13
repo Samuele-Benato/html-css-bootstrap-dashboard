@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bootstrap dashboard</title>
     <!-- AUTHOR -->
     <meta name="author" content="Samuele Benato" />
     <!-- DESCRIPTION -->
-    <meta name="description" content="" />
+    <meta name="description" content="Riproduzione Layout con Bootstrap" />
     <!-- FAVICON -->
     <link rel="shortcut icon" href="" type="image/x-icon" />
     <!-- FONT AWESOME -->
@@ -116,7 +116,7 @@
           <div class="container-fluid">
             <div class="row">
                <!-- NEW STUDENT -->
-               <div class="col-12 col-md-4 col-lg-2 order-md-3 pb-3">
+               <div class=" col-md-4 col-lg-2 order-md-3 pb-3">
                 <div class="d-flex align-items-center">
                   <p class="fs-6 m-0 me-2">Nuovo Studente</p>
                   <button 
@@ -128,7 +128,7 @@
                 
               </div>
               <!-- BOOLEAN APPS -->
-              <div class="col-12 col-md-4 col-lg-6 order-md-1 pb-3">
+              <div class=" col-md-4 col-lg-6 order-md-1 pb-3">
                 <div>
                   <h2 class="d-inline-block ">Boolean</h2>
                   <span class="badge rounded-pill bg_black_light ">Piano blaze</span>
@@ -153,7 +153,7 @@
                 
               </div>
               <!-- STUDENTS ONLINE -->
-              <div class="col-12 col-md-4 col-lg-4 order-md-2 ">
+              <div class=" col-md-4 col-lg-4 order-md-2 ">
                 <p class="fs-5 mb-2">
                   Studenti online negli ultimi 30 minuti
                 </p>
@@ -163,7 +163,225 @@
             </div>
           </div> 
         </section>
+        <!-- INFO / GRAPHICS -->
+      
+        <div class="container-fluid">
+          <div class="row">
+            <div class=" col-lg-8">
+              <!-- PROSSIME CLASSI -->
+              <div class="card text-bg-light my-3">
+                <div class="card-header fw-bold "><h5>Prossime classi</h5></div>
+                <div class="card-body  ">
+
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="w-50">Nome</th>
+                        <th scope="col d-none d-md-inline"
+                          class="text-center">Data inizio
+                        </th>
+                        <th scope="col d-none d-md-inline"
+                          class="text-center">ROI
+                        </th>
+                        <th scope="col"
+                          class="text-center">Stato
+                        </th>
+                        <th scope="col"
+                          class="text-center">Azioni
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- CLASSE 75 -->
+                      <tr>
+                        <th scope="row" class="next_class_nr">
+                          <div class="img_table pe-2">
+                            <img class="img-fluid" src="./img/class-avatar.jpg" alt="logo">
+                          </div>
+                          <span>Classe 75</span>
+                        </th>
+                        <td class="text-center next_class_nr">
+                          15 Feb 2021
+                        </td>
+                        <td class="text-center next_class_nr">
+                          20%
+                        </td>
+                        <td class="text-center next_class_nr">
+                          <span class=" badge text-bg-success" >Done</span>
+                        </td>
+                        <td class="text-center next_class_nr"> 
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-pencil"></i></button>
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+                      <!-- CLASSE 76 -->
+                      <tr>
+                        <th scope="row" class="next_class_nr">
+                          <div class="img_table pe-2">
+                            <img class="img-fluid" src="./img/class-avatar.jpg" alt="logo">
+                          </div>
+                          <span>Classe 76</span>
+                        </th>
+                        <td class="text-center next_class_nr">
+                          16 Feb 2021
+                        </td>
+                        <td class="text-center next_class_nr">
+                          20%
+                        </td>
+                        <td class="text-center next_class_nr">
+                          <span class=" badge text-bg-success">Done</span>
+                        </td>
+                        <td class="text-center next_class_nr"> 
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-pencil"></i></button>
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+                      <!-- CLASSE 77 -->
+                      <tr>
+                        <th scope="row" class="next_class_nr">
+                          <div class="img_table pe-2">
+                            <img class="img-fluid" src="./img/class-avatar.jpg" alt="logo">
+                          </div>
+                          <span>Classe 77</span>
+                        </th>
+                        <td class="text-center next_class_nr">
+                          17 Feb 2021
+                        </td>
+                        <td class="text-center next_class_nr">
+                          20%
+                        </td>
+                        <td class="text-center next_class_nr">
+                          <span class=" badge text-bg-warning text-white">process</span>
+                        </td>
+                        <td class="text-center next_class_nr"> 
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-pencil"></i></button>
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+                      <!-- CLASSE 78 -->
+                      <tr>
+                        <th scope="row " class="next_class_nr">
+                          <div class="img_table pe-2">
+                            <img class="img-fluid" src="./img/class-avatar.jpg" alt="logo">
+                          </div>
+                          <span >Classe 78</span>
+                        </th>
+                        <td class="text-center next_class_nr">
+                          18 Feb 2021
+                        </td>
+                        <td class="text-center next_class_nr">
+                          20%</td>
+                        <td class="text-center next_class_nr">
+                          <span class=" badge text-bg-success">Done</span>
+                        </td>
+                        <td class="text-center next_class_nr"> 
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-pencil"></i></button>
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+                      <!-- CLASSE 79 -->
+                      <tr>
+                        <th scope="row" class="next_class_nr">
+                          <div class="img_table pe-2">
+                            <img class="img-fluid" src="./img/class-avatar.jpg" alt="logo">
+                          </div>
+                          <span>Classe 79</span>
+                        </th>
+                        <td class="text-center next_class_nr">
+                          19 Feb 2021
+                        </td>
+                        <td class="text-center next_class_nr">
+                          20%
+                        </td>
+                        <td class="text-center next_class_nr">
+                          <span class=" badge text-bg-danger">failed</span>
+                        </td>
+                        <td class="text-center next_class_nr"> 
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-pencil"></i></button>
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+                      <!-- CLASSE 80 -->
+                      <tr>
+                        <th scope="row" class="next_class_nr">
+                          <div class="img_table pe-2">
+                            <img class="img-fluid" src="./img/class-avatar.jpg" alt="logo">
+                          </div>
+                          <span>Classe 80</span>
+                        </th>
+                        <td class="text-center next_class_nr">
+                          20 Feb 2021
+                        </td>
+                        <td class="text-center next_class_nr">
+                          20%
+                        </td>
+                        <td class="text-center next_class_nr">
+                          <span class=" badge text-bg-success">Done</span>
+                        </td>
+                        <td class="text-center next_class_nr"> 
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-pencil"></i></button>
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+                      <!-- CLASSE 81 -->
+                      <tr>
+                        <th scope="row" class="next_class_nr">
+                          <div class="img_table pe-2">
+                            <img class="img-fluid" src="./img/class-avatar.jpg" alt="logo">
+                          </div>
+                          <span>Classe 81</span>
+                        </th>
+                        <td class="text-center next_class_nr">
+                          21 Feb 2021
+                        </td>
+                        <td class="text-center next_class_nr">
+                          20%
+                        </td>
+                        <td class="text-center next_class_nr">
+                          <span class=" badge text-bg-danger">failed</span>
+                        </td>
+                        <td class="text-center next_class_nr"> 
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-pencil"></i></button>
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+                      <!-- CLASSE 82 -->
+                      <tr>
+                        <th scope="row" class="next_class_nr">
+                          <div class="img_table pe-2">
+                            <img class="img-fluid" src="./img/class-avatar.jpg" alt="logo">
+                          </div>
+                          <span>Classe 82</span>
+                        </th>
+                        <td class="text-center next_class_nr">
+                          22 Feb 2021
+                        </td>
+                        <td class="text-center next_class_nr">
+                          20%
+                        </td>
+                        <td class="text-center next_class_nr">
+                          <span class=" badge text-bg-success">Done</span>
+                        </td>
+                        <td class="text-center next_class_nr"> 
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-pencil"></i></button>
+                          <button type="button" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- FAQ -->
+              <div class="card text-bg-light my-3">
+                <div class="card-header fw-bold"><h5>F.A.Q</h5></div>
+                <div class="card-body">
+              </div>
+            </div>
+          <div class=" col-lg-4"></div>
+        </div>
+        
       </div>
+      
     </main>
     <!-- OFF CANVAS -->
     <div 
@@ -310,7 +528,7 @@
           <div class="d-inline-block w-100">
             <div class="form-check">
               <input 
-              class="form-check-input" 
+              class="form-check-input " 
               type="checkbox" 
               value="" 
               id="Acconsente"
@@ -320,6 +538,7 @@
               </label>
             </div>
             <div class="invalid-feedback">
+              
             </div>
           </div>
           <!-- SALVA -->
