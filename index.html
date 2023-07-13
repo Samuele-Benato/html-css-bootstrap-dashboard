@@ -170,7 +170,9 @@
             <div class=" col-lg-8">
               <!-- PROSSIME CLASSI -->
               <div class="card text-bg-light my-3">
-                <div class="card-header fw-bold "><h5>Prossime classi</h5></div>
+                <div class="card-header fw-bold ">
+                  <h5 class="fs-3">Prossime classi</h5>
+                </div>
                 <div class="card-body  ">
 
                   <!-- TABLE -->
@@ -178,18 +180,18 @@
                     <!-- TITOLI -->
                     <thead>
                       <tr>
-                        <th scope="col" class="w-50">Nome</th>
+                        <th scope="col" class="w-50 fs-5">Nome</th>
                         <th scope="col"
-                          class="text-center d-none d-md-table-cell">Data inizio
+                          class="text-center d-none d-md-table-cell fs-5">Data inizio
                         </th>
                         <th scope="col"
-                          class="text-center d-none d-md-table-cell">ROI
+                          class="text-center d-none d-md-table-cell fs-5">ROI
                         </th>
                         <th scope="col"
-                          class="text-center">Stato
+                          class="text-center fs-5">Stato
                         </th>
                         <th scope="col"
-                          class="text-center">Azioni
+                          class="text-center fs-5">Azioni
                         </th>
                       </tr>
                     </thead>
@@ -377,7 +379,7 @@
               <!-- FAQ -->
               <div class="card text-bg-light my-3">
                 <div class="card-header fw-bold">
-                  <h5>F.A.Q</h5>
+                  <h5 class="fs-3">F.A.Q</h5>
                 </div>
                 <div class="card-body">
                   <div class="accordion accordion-flush" id="FAQ">
@@ -386,7 +388,7 @@
                       <h3 
                         class="accordion-header h5" id="flush-headingOne">
                         <button 
-                          class="accordion-button collapsed  fs-4" type="button" 
+                          class="accordion-button collapsed fs-5" type="button" 
                           data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                           Come aggiungere un nuovo studente?
                         </button>
@@ -394,7 +396,7 @@
                       <!-- ANSWERE 1 -->
                       <div 
                         id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#FAQ">
-                        <div class="accordion-body fs-5">
+                        <div class="accordion-body fs-6">
                           La risposta che stai cercando è molto semplice! Basterà andare alla <a href="#students">sezione iniziale</a> e premere "+" accanto a Nuovo studente.  
                         </div>
                       </div>
@@ -404,7 +406,7 @@
                       <h3 
                         class="accordion-header h5" id="flush-headingTwo">
                         <button 
-                          class="accordion-button collapsed fs-4" type="button" 
+                          class="accordion-button collapsed fs-5" type="button" 
                           data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                           Come posso accedere alle informazioni del mio account?
                         </button>
@@ -412,7 +414,7 @@
                       <!-- ANSWERW 2 -->
                       <div 
                         id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#FAQ">
-                        <div class="accordion-body fs-5">
+                        <div class="accordion-body fs-6">
                           Ti basterà andare nelle impostazioni " <i class="fa-solid fa-gear pe-2"></i>", da lì avrai accesso a tutte le informazioni riguardanti il tuo account !
                         </div>
                       </div>
@@ -422,7 +424,7 @@
                       <h3 
                         class="accordion-header" id="flush-headingThree">
                         <button 
-                          class="accordion-button fs-4" 
+                          class="accordion-button fs-5" 
                           type="button" 
                           data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree">
                           Posso usare questa dashboard da mobile?
@@ -431,7 +433,7 @@
                       <!-- ANSWERE 3 -->
                       <div 
                         id="flush-collapseThree" class="accordion-collapse collapse show" aria-labelledby="flush-headingThree" data-bs-parent="#FAQ">
-                        <div class="accordion-body fs-5">Certo!<br>
+                        <div class="accordion-body fs-6">Certo!<br>
                           La dashboard è supportata per tutti i tipi di device.
                         </div>
                       </div>
@@ -443,8 +445,9 @@
           <div class=" col-lg-4">
             <!-- CARD CHECKBOX -->
             <div class="card text-bg-light my-3">
+              <!-- TOD-O SECTION -->
               <div class="card-header fw-bold">
-                <h5>Todo</h5>
+                <h5 class="fs-3">Todo</h5>
               </div>
               <div class="card-body">
                 <!-- KICKOFF -->
@@ -456,7 +459,7 @@
                     value="" 
                     id="Kickoff">
                   <label 
-                    class="form-check-label fs-5" 
+                    class="form-check-label fs-6" 
                     for="Kickoff">
                     Kickoff nuove classi
                   </label>
@@ -470,7 +473,7 @@
                     value="" 
                     id="Lesson">
                   <label 
-                    class="form-check-label fs-5" 
+                    class="form-check-label fs-6" 
                     for="Lesson">
                     Lezione su Bootstrap 5 in classe #103 
                   </label>
@@ -484,7 +487,7 @@
                     value="" 
                     id="Check-username">
                   <label 
-                    class="form-check-label fs-5" 
+                    class="form-check-label fs-6" 
                     for="Check-username">
                     Controllare username github studenti
                   </label>
@@ -497,19 +500,25 @@
                 <img src="./img/stats.jpeg" alt="statistiche utenti attivi">
               </div>
               <div class="card-body">
-                <h5 class="card-title">
+                <h5 class="card-title fs-3">
                   Utenti attivi
                 </h5>
-                <p class="card-text">
+                <p class="card-text fs-5">
                   Lista degli utenti attivi questo mese
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">Gennaio: 1200</li>
-                <li class="list-group-item">Febbraio: 800</li>
-                <li class="list-group-item">Marzo: 1500</li>
+                <li 
+                  class="list-group-item fw-bold">Gennaio: 1200
+                </li>
+                <li class="list-group-item fw-bold">
+                  Febbraio: 800
+                </li>
+                <li class="list-group-item fw-bold">
+                  Marzo: 1500
+                </li>
               </ul>
               <div class="card-body">
-                <a href="#" class="card-link">Visualizza report approfondito</a>
+                <a href="#" class="card-link fw-bold">Visualizza report approfondito</a>
               </div>
             </div>
           </div>
@@ -525,7 +534,7 @@
       id="staticBackdrop" aria-labelledby="staticBackdropLabel">
       <div class="offcanvas-header">
         <!-- TITLE -->
-        <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
+        <h5 class="offcanvas-title fs-3" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
         <!-- BUTTON X -->
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
