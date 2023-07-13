@@ -43,7 +43,8 @@
         <input 
         class="form-control me-3" 
         type="search" 
-        placeholder="Prova a cercare: Lezioni di Laravel" />
+        placeholder="Prova a cercare: Lezioni di Laravel" 
+        />
         <!-- ICON LIST -->
         <ul class=" icon_list d-none d-lg-flex">
           <li>
@@ -54,13 +55,13 @@
           </li>
           <li>
             <!-- QUESTION ICON -->
-            <a class="text-black-50 me-3 fs-5"  href="#">
+            <a class="text-black-50 me-3 fs-5" href="#">
               <i class="fa-solid fa-circle-question"></i>
             </a>
           </li>
           <li>
             <!-- ELLIPSIS VERTICAL -->
-            <a class="text-black-50 me-3 fs-5"  href="#">
+            <a class="text-black-50 me-3 fs-5" href="#">
               <i class="fa-solid fa-ellipsis-vertical"></i>
             </a>
           </li>
@@ -88,7 +89,7 @@
     <main class="" id="main">
       <!-- SIDEBAR -->
       <div class="text-white" id="sidebar">
-        <ul class="list-group align-items-center  h-100">
+        <ul class="list-group align-items-center h-100">
           <li class="fs-5 mb-3">
             <i class="fa-solid fa-house pe-2"></i>
             <span class="d-none d-lg-inline-block">Home</span>
@@ -118,12 +119,16 @@
                <!-- NEW STUDENT -->
                <div class=" col-md-4 col-lg-2 order-md-3 pb-3">
                 <div class="d-flex align-items-center">
-                  <p class="fs-6 m-0 me-2">Nuovo Studente</p>
+                  <p class="fs-6 m-0 me-2">
+                    Nuovo Studente
+                  </p>
                   <button 
-                  class="btn border_radius fs-3 px-3"   
-                  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"aria-controls="staticBackdrop">
-                  +
-                </button>
+                    class="btn border_radius fs-3 px-3"   
+                    type="button" 
+                    data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                    aria-controls="staticBackdrop">
+                    +
+                  </button>
                 </div>
                 
               </div>
@@ -539,178 +544,196 @@
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <div>
           <!-- FORM -->
-          <form
+        <form
           class="row g-3"
           action="http://learning.tizianonicolai.com/request-catcher/"
           method="post">
-          <!-- NOME -->
-          <div class="d-inline-block w-50">
-            <label for="Nome">Nome</label>
-            <div class="input-group has-validation">
-              <input 
-              class="form-control"
-              id="Nome" 
-              name="Nome" 
-              type="text"
-              required
-              placeholder="Inserisci il tuo Nome">
+         
+          <div class="container-fluid">
+            <div class="row g-3">
+              <!-- NOME -->
+              <div class="col-md-6">
+                <label for="Nome">Nome</label>
+                <div class="input-group has-validation">
+                  <input 
+                  class="form-control"
+                  id="Nome" 
+                  name="Nome" 
+                  type="text"
+                  required
+                  placeholder="Inserisci il tuo Nome">
 
-              <div class="invalid-feedback">
-              Inserisci un Nome. 
+                  <div class="invalid-feedback">
+                    Inserisci un Nome. 
+                  </div>
+                </div>
               </div>
-            </div>
-            
-          </div>
-          <!-- COGNOME -->
-          <div class="d-inline-block w-50">
-            <label for="Cognome">Cognome</label>
-            <div class="input-group has-validation">
-              <input 
-              class="form-control"
-              id="Cognome" 
-              name="Cognome" 
-              type="text"
-              required
-              placeholder="Inserisci il tuo Cognome">
+              <!-- COGNOME -->
+              <div class="col-md-6">
+                <label for="Cognome">Cognome</label>
+                <div class="input-group has-validation">
+                  <input 
+                  class="form-control"
+                  id="Cognome" 
+                  name="Cognome" 
+                  type="text"
+                  required
+                  placeholder="Inserisci il tuo Cognome">
               
-              <div class="invalid-feedback">
-                Inserisci un Cognome. 
+                  <div class="invalid-feedback">
+                    Inserisci un Cognome. 
+                  </div>
+                </div>
               </div>
-            </div>
-           
-          </div>
-          <!-- EMAIL -->
-          <div class="d-inline-block w-50">
-            <label for="Email">Email</label>
-            <div class="input-group has-validation">
-              <div class="input-group">
-                <span class="input-group-text" id="Email">@</span>
+              <!-- EMAIL -->
+              <div class="col-md-6">
+                <label for="Email">Email</label>
+                <div class="input-group has-validation">
+                  <div class="input-group">
+                    <span class="input-group-text" id="Email">@</span>
+                  <input 
+                    type="text" 
+                    class="form-control"   
+                    aria-describedby="Email"
+                    required
+                    placeholder="Inserisci una email valida">
+
+                  </div>
+                  <div class="invalid-feedback">
+                    Inserisci un email valida. 
+                  </div>
+                </div> 
+              </div>
+              <!-- PASSWORD -->
+              <div class="col-md-6">
+                <label for="Password">Password</label>
                 <input 
-                type="text" 
-                class="form-control"   
-                aria-describedby="Email"
+                class="form-control"
+                id="Password" 
+                name="Password" 
+                type="password"
                 required
-                placeholder="Inserisci una email valida">
+                placeholder="Inserisci una password con almeno 8 caratteri">
 
+                <div 
+                  class="invalid-feedback"
+                  required>
+                  Inserisci una Password sicura. 
+                </div>
               </div>
-              <div class="invalid-feedback">
-                Inserisci un email valida. 
+              <!-- INDIRIZZO -->
+              <div class="col-12">
+                <label for="Indirizzo">Indirizzo</label>
+                <input 
+                class="form-control"
+                id="Indirizzo" 
+                name="Indirizzo" 
+                type="text"
+                required
+                placeholder="Inserisci il tuo indirizzo">
+
+                <div class="invalid-feedback">
+                  Inserisci un indirizzo valido. 
+                </div>
               </div>
-            </div>
-            
-          </div>
-          <!-- PASSWORD -->
-          <div class="d-inline-block w-50">
-            <label for="Password">Password</label>
-            <input 
-            class="form-control"
-            id="Password" 
-            name="Password" 
-            type="password"
-            required
-            placeholder="Inserisci una password con almeno 8 caratteri">
+              <!-- CITTA' -->
+              <div class="col-md-6">
+                <label for="Città">Città</label>
+                <input 
+                class="form-control"
+                id="Città" 
+                name="Città" 
+                type="text"
+                required
+                placeholder="Inserisci città corrispondente" >
 
-            <div class="invalid-feedback"
-            required>
-              Inserisci una Password sicura. 
-            </div>
-          </div>
-          <!-- INDIRIZZO -->
-          <div class="d-inline-block">
-            <label for="Indirizzo">Indirizzo</label>
-            <input 
-            class="form-control"
-            id="Indirizzo" 
-            name="Indirizzo" 
-            type="text"
-            required
-            placeholder="Inserisci il tuo indirizzo">
+                <div class="invalid-feedback">
+                  Inserisci una città valida. 
+                </div>
+              </div>
+              <!-- STATO -->
+              <div class="col-md-4">
+                <label for="Città">Stato</label>
+                <select class="form-select form-select" >
+                  <option selected="">Scegli...</option>
+                  <option value="Italia">Italia</option>
+                  <option value="Giappone">Giappone</option>
+                  <option value="Spagna">Spagna</option>
+                </select>
+              </div>
+              <!-- CAP -->
+              <div class="col-md-2">
+                <label for="CAP">CAP</label>
+                <input 
+                class="form-control"
+                id="CAP" 
+                name="CAP" 
+                type="text"
+                required
+                placeholder="5 cifre">
 
-            <div class="invalid-feedback">
-              Inserisci un indirizzo valido. 
-            </div>
-          </div>
-          <!-- CITTA' -->
-          <div class="d-inline-block w-50">
-            <label for="Città">Città</label>
-            <input 
-            class="form-control"
-            id="Città" 
-            name="Città" 
-            type="text"
-            required
-            placeholder="Inserisci città corrispondente" >
+                <div class="invalid-feedback">
+                  Inserisci CAP. 
+                </div>
+              </div>
+               <!-- FOTO -->
+              <div class="d-inline-block w-100">
+                <label 
+                  for="formFile" 
+                  class="form-label">
+                  Foto
+                </label>
 
-            <div class="invalid-feedback">
-              Inserisci una città valida. 
-            </div>
-          </div>
-          <!-- STATO -->
-          <div class="d-inline-block w-25">
-            <label for="Città">Stato</label>
-            <select class="form-select form-select" >
-              <option selected="">Scegli...</option>
-              <option value="Italia">Italia</option>
-              <option value="Giappone">Giappone</option>
-              <option value="Spagna">Spagna</option>
-            </select>
-          </div>
-          <!-- CAP -->
-          <div class="d-inline-block w-25">
-            <label for="CAP">CAP</label>
-            <input 
-            class="form-control"
-            id="CAP" 
-            name="CAP" 
-            type="text"
-            required
-            placeholder="5 cifre">
+                <input 
+                class="form-control" 
+                type="file" 
+                id="formFile">
+              </div>
+              <!-- PRIVACY -->
+              <div class="col">
+                <div class="form-check">
+                  <input 
+                  class="form-check-input " 
+                  type="checkbox" 
+                  value="" 
+                  id="Acconsente"
+                  required>
+                  <label 
+                    class="form-check-label" 
+                    for="Acconsente">
+                    Acconsento all'utilizzo dei dati 
+                  </label>
+                </div>
+              </div>
+              <!-- SALVA -->
+              <div>
+                <input 
+                class="btn btn-primary" 
+                type="submit" 
+                value="Salva">
+                <button 
+                  type="reset" 
+                  class="btn btn-warning">
+                  Svuota
+                </button>
+              </div> 
 
-            <div class="invalid-feedback">
-              Inserisci CAP. 
             </div>
           </div>
+           
           
-          <!-- FOTO -->
-          <div class="d-inline-block w-100">
-            <label 
-            for="formFile" class="form-label">Foto</label>
-            <input 
-            class="form-control" 
-            type="file" 
-            id="formFile">
-          </div>
-          <!-- PRIVACY -->
-          <div class="d-inline-block w-100">
-            <div class="form-check">
-              <input 
-              class="form-check-input " 
-              type="checkbox" 
-              value="" 
-              id="Acconsente"
-              required>
-              <label class="form-check-label" for="Acconsente">
-                Acconsento all'utilizzo dei dati 
-              </label>
-            </div>
-            <div class="invalid-feedback">
-              
-            </div>
-          </div>
-          <!-- SALVA -->
-          <div>
-            <input 
-            class="btn btn-primary" 
-            type="submit" 
-            value="Salva">
-            <button 
-            type="reset" 
-            class="btn btn-warning">Svuota</button>
-          </div> 
+          
+          
+          
+          
+          
+          
+          
+         
+          
+          
         </form>
-        </div>
       </div>
     </div>
     <!-- JS BOOTSTRAP -->

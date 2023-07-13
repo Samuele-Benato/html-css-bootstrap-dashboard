@@ -121,6 +121,8 @@ main {
   width: 100% !important;
 }
 
+/* HOVER */
+
 @media screen and (min-width: 992px) {
   /* MACRO LAYOUT */
   #sidebar {
