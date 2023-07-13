@@ -373,8 +373,68 @@
               </div>
               <!-- FAQ -->
               <div class="card text-bg-light my-3">
-                <div class="card-header fw-bold"><h5>F.A.Q</h5></div>
+                <div class="card-header fw-bold">
+                  <h5>F.A.Q</h5>
+                </div>
                 <div class="card-body">
+                  <div class="accordion accordion-flush" id="FAQ">
+                    <div class="accordion-item">
+                      <!-- QUESTION 1 -->
+                      <h3 
+                        class="accordion-header h5" id="flush-headingOne">
+                        <button 
+                          class="accordion-button collapsed  fs-4" type="button" 
+                          data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Come aggiungere un nuovo studente?
+                        </button>
+                      </h3>
+                      <!-- ANSWERE 1 -->
+                      <div 
+                        id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#FAQ">
+                        <div class="accordion-body fs-5">
+                          La risposta che stai cercando è molto semplice! Basterà andare alla <a href="#students">sezione iniziale</a> e premere "+" accanto a Nuovo studente.  
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <!-- QUESTION 2 -->
+                      <h3 
+                        class="accordion-header h5" id="flush-headingTwo">
+                        <button 
+                          class="accordion-button collapsed fs-4" type="button" 
+                          data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Come posso accedere alle informazioni del mio account?
+                        </button>
+                      </h3>
+                      <!-- ANSWERW 2 -->
+                      <div 
+                        id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#FAQ">
+                        <div class="accordion-body fs-5">
+                          Ti basterà andare nelle impostazioni " <i class="fa-solid fa-gear pe-2"></i>", da lì avrai accesso a tutte le informazioni riguardanti il tuo account !
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <!-- QUESTION 3 -->
+                      <h3 
+                        class="accordion-header" id="flush-headingThree">
+                        <button 
+                          class="accordion-button fs-4" 
+                          type="button" 
+                          data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree">
+                          Posso usare questa dashboard da mobile?
+                        </button>
+                      </h3>
+                      <!-- ANSWERE 3 -->
+                      <div 
+                        id="flush-collapseThree" class="accordion-collapse collapse show" aria-labelledby="flush-headingThree" data-bs-parent="#FAQ">
+                        <div class="accordion-body fs-5">Certo!<br>
+                          La dashboard è supportata per tutti i tipi di device.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           <div class=" col-lg-4"></div>
@@ -542,19 +602,15 @@
             </div>
           </div>
           <!-- SALVA -->
-          <div class="d-inline-block">
+          <div>
             <input 
             class="btn btn-primary" 
             type="submit" 
             value="Salva">
-          </div>
-          <!-- SVUOTA -->
-          <div class="d-inline-block">
             <button 
-            type="button" 
+            type="reset" 
             class="btn btn-warning">Svuota</button>
-          </div>
-          
+          </div> 
         </form>
         </div>
       </div>
