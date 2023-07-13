@@ -17,11 +17,29 @@ ul {
   list-style-type: none;
 }
 
+img {
+  max-width: 100%;
+}
+
+/* UTILITIES */
+
+.bg_black_light {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.border_radius {
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+}
+
 /* MACRO LAYOUT */
 
 #header {
   height: 100px;
   display: flex;
+
+  background: #f8f9fa;
 }
 
 #main {
@@ -34,6 +52,7 @@ ul {
   height: 100%;
 
   padding: 20px 5px;
+  background: #051e34;
 }
 
 #main-content {
@@ -42,6 +61,18 @@ ul {
 }
 
 /* <-- HEADER --> */
+.logo_small {
+  height: 80px;
+  width: 80px;
+}
+
+.logo_big {
+  height: 80px;
+  width: 250px;
+
+  justify-content: center;
+  align-items: center;
+}
 
 #nav {
   display: flex;
@@ -55,6 +86,12 @@ ul {
   padding: 0;
 }
 
+/* SECTION STUDENTS */
+
+#students {
+  background: #1b72e8;
+}
+
 /* OFFCANVAS */
 .w_canvas {
   min-width: 100% !important;
@@ -65,13 +102,13 @@ ul {
 @media screen and (min-width: 992px) {
   /* MACRO LAYOUT */
   #sidebar {
-    width: 200px;
+    width: 150px;
     height: 100%;
   }
 
   #main-content {
     height: 100%;
-    width: calc(100% - 200px);
+    width: calc(100% - 150px);
   }
   /* OFFCANVAS */
   .w_canvas {

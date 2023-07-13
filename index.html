@@ -30,30 +30,37 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="debug" id="header">
+    <header class="" id="header">
       <nav id="nav" class="align-items-center justify-content-between px-2">
         <!-- LOGO -->
-        <div class="logo_small d-lg-none">logo</div>
-        <div class="logo_big d-none d-lg-block">logoB</div>
+        <div class="logo_small d-lg-none mx-3">
+          <img src="./img/mobile-logo.png" class="img-fluid" alt="Logo Boolean">
+        </div>
+        <div class="logo_big d-none d-lg-flex mx-3">
+          <img src="./img/logo.svg" class="img-fluid" alt="Logo Boolean">
+        </div>
         <!-- SERCH -->
-        <input class="form-control me-2" type="search" placeholder="Search" />
+        <input 
+        class="form-control me-3" 
+        type="search" 
+        placeholder="Prova a cercare: Lezioni di Laravel" />
         <!-- ICON LIST -->
         <ul class=" icon_list d-none d-lg-flex">
           <li>
             <!-- UL ICON -->
-            <a href="#">
+            <a class="text-black-50 me-3 fs-5" href="#">
               <i class="fa-solid fa-list-ul"></i>
             </a>
           </li>
           <li>
             <!-- QUESTION ICON -->
-            <a href="#">
+            <a class="text-black-50 me-3 fs-5"  href="#">
               <i class="fa-solid fa-circle-question"></i>
             </a>
           </li>
           <li>
             <!-- ELLIPSIS VERTICAL -->
-            <a href="#">
+            <a class="text-black-50 me-3 fs-5"  href="#">
               <i class="fa-solid fa-ellipsis-vertical"></i>
             </a>
           </li>
@@ -61,7 +68,7 @@
         <!-- DROPDOWN -->
         <div class="dropdown">
           <a
-            class="fa-solid fa-bell"
+            class="fa-solid fa-bell text-warning me-2 fs-5"
             href="#"
             role="button"
             data-bs-toggle="dropdown"
@@ -78,24 +85,24 @@
       </nav>
     </header>
     <!-- MAIN -->
-    <main class="debug" id="main">
+    <main class="" id="main">
       <!-- SIDEBAR -->
-      <div class="debug" id="sidebar">
+      <div class="text-white" id="sidebar">
         <ul class="list-group align-items-center  h-100">
-          <li>
-            <i class="fa-solid fa-house"></i>
+          <li class="fs-5 mb-3">
+            <i class="fa-solid fa-house pe-2"></i>
             <span class="d-none d-lg-inline-block">Home</span>
           </li>
-          <li>
-            <i class="fa-solid fa-chart-simple"></i>
+          <li class="fs-5 mb-3">
+            <i class="fa-solid fa-chart-simple pe-2"></i>
             <span class="d-none d-lg-inline-block">Stats</span>
           </li>
-          <li>
-            <i class="fa-solid fa-signal"></i>
+          <li class="fs-5 mb-3">
+            <i class="fa-solid fa-signal pe-2"></i>
             <span class="d-none d-lg-inline-block">Signals</span>
           </li>
-          <li class="mt-auto">
-            <i class="fa-solid fa-gear"></i>
+          <li class="mt-auto fs-5 ">
+            <i class="fa-solid fa-gear pe-2"></i>
             <span class="d-none d-lg-inline-block">Admin</span>
           </li>
         </li>
@@ -105,15 +112,15 @@
       <!-- MAIN CONTENT -->
       <div class="" id="main-content">
         <!-- SECTION STUDENTS -->
-        <section id="students">
+        <section id="students" class="text-white py-4">
           <div class="container-fluid">
             <div class="row">
                <!-- NEW STUDENT -->
-               <div class="col-12 col-md-4 col-lg-3 order-md-3">
-                <div class="d-flex ">
-                  <p>Nuovo Studente</p>
+               <div class="col-12 col-md-4 col-lg-2 order-md-3 pb-3">
+                <div class="d-flex align-items-center">
+                  <p class="fs-6 m-0 me-2">Nuovo Studente</p>
                   <button 
-                  class="btn btn-primary"   
+                  class="btn border_radius fs-3 px-3"   
                   type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"aria-controls="staticBackdrop">
                   +
                 </button>
@@ -121,36 +128,36 @@
                 
               </div>
               <!-- BOOLEAN APPS -->
-              <div class="col-12 col-md-4 col-lg-5 order-md-1">
+              <div class="col-12 col-md-4 col-lg-6 order-md-1 pb-3">
                 <div>
-                  <h2 class="d-inline-block">Boolean</h2>
-                  <span class="badge rounded-pill text-bg-primary">Piano blaze</span>
+                  <h2 class="d-inline-block ">Boolean</h2>
+                  <span class="badge rounded-pill bg_black_light ">Piano blaze</span>
                 </div>
                 
-                <div class="badge rounded-pill text-bg-primary
+                <div class="badge rounded-pill bg_black_light
                 d-inline-block">3 app</div>
 
                 <i class="fa-solid fa-angles-right"></i>
 
-                <div class="badge rounded-pill text-bg-primary
+                <div class="badge rounded-pill bg_black_light
                 d-inline-block d-lg-none">+</div>
 
                 <div class="d-lg-inline-block d-none">
-                  <div class="badge rounded-pill text-bg-primary
+                  <div class="badge rounded-pill bg_black_light
                   d-inline-block">Boolean mobile app</div>
-                  <div class="badge rounded-pill text-bg-primary
+                  <div class="badge rounded-pill bg_black_light
                   d-inline-block">Boolean web app</div>
-                  <div class="badge rounded-pill text-bg-primary
+                  <div class="badge rounded-pill bg_black_light
                   d-inline-block">Boolean blog app</div>
                 </div>
                 
               </div>
               <!-- STUDENTS ONLINE -->
-              <div class="col-12 col-md-4 col-lg-4 order-md-2">
-                <p>
+              <div class="col-12 col-md-4 col-lg-4 order-md-2 ">
+                <p class="fs-5 mb-2">
                   Studenti online negli ultimi 30 minuti
                 </p>
-                <div>125</div>
+                <div class="fs-1">125</div>
               </div>
               
             </div>
@@ -323,9 +330,12 @@
             value="Salva">
           </div>
           <!-- SVUOTA -->
-          <button 
-          type="button" 
-          class="btn btn-warning">Svuota</button>
+          <div class="d-inline-block">
+            <button 
+            type="button" 
+            class="btn btn-warning">Svuota</button>
+          </div>
+          
         </form>
         </div>
       </div>
